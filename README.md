@@ -5,7 +5,7 @@
 2. Create a [Cloud Storage bucket](https://console.cloud.google.com/project/_/storage)
 3. Create a [Cloud Dataproc cluster](https://cloud.google.com/dataproc/docs/guides/create-cluster)
 
-##Scala Code
+## Scala Code
 1. Create a HelloWorld Scala Object
 2. Package your project
     * Using sbt
@@ -13,7 +13,7 @@
     * This should generate a jar file in target/scala-2.10 directory
         
 
-##GCloud Fun
+## GCloud Fun
 1. Copy jar to Cloud Storage 
     ```gsutil cp [path-to]/playing-with-gcloud-and-scala_2.10-0.1-SNAPSHOT.jar gs://<bucket_name>/```
 2. Submit your job to a cluster
@@ -31,7 +31,7 @@
            Job output is complete
         ```
 
-##Final Steps
+## Final Steps
 1. Shutdown your cluster
     * gcloud dataproc clusters delete <cluster-name>
     * gsutil rm gs://<bucket-name>/playing-with-gcloud-and-scala_2.10-0.1-SNAPSHOT.jar
@@ -39,12 +39,12 @@
     * Example: Write and run Spark Scala code using the cluster's spark-shell REPL from [here](https://cloud.google.com/dataproc/docs/tutorials/spark-scala)
         
             
-##Useful commands
+## Useful commands
 * List your projects: ```gcloud projects list```
 * List clusters in current project: ```gcloud dataproc clusters list```
 
-##Useful links
+## Useful links
 * To see all your clusters go [here](https://console.cloud.google.com/dataproc/clusters/)
 
-##Reference
+## Reference
 * [Tutorial](https://cloud.google.com/dataproc/docs/tutorials/spark-scala)
